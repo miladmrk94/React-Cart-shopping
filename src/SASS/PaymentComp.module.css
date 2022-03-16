@@ -1,0 +1,244 @@
+.continuer {
+  background-color: #1f1f1f;
+  font-family: "Work Sans", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.continuer .box {
+  height: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  /* reset input */
+}
+
+.continuer .box .paymentTitle {
+  font-size: 25px;
+  color: #f3f3f3;
+}
+
+.continuer .box .paymentMethod {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #b4b4b4;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 50px;
+}
+
+.continuer .box .paymentMethod input[type="radio"]:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  top: -2px;
+  left: -5px;
+  position: relative;
+  background-color: #d1d3d1;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+}
+
+.continuer .box .paymentMethod input[type="radio"]:checked:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  top: -2px;
+  left: -5px;
+  position: relative;
+  background-color: #ffa500;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+}
+
+.continuer .box .btn_paypal {
+  width: 150px;
+  height: 55px;
+  border-bottom-left-radius: 0.3rem;
+  border-top-left-radius: 0.3rem;
+  border: none;
+  background-color: #3081c4;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.continuer .box .btn_paypal .paypal {
+  font-size: 2rem;
+}
+
+.continuer .box .btn_paypal:hover {
+  color: #3081c4;
+  background-color: #fdfcea;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.continuer .box .btn_visa {
+  width: 150px;
+  height: 55px;
+  border-bottom-right-radius: 0.3rem;
+  border-top-right-radius: 0.3rem;
+  border: none;
+  background-color: #4bd156;
+}
+
+.continuer .box .btn_visa .visa {
+  font-size: 2rem;
+}
+
+.continuer .box .btn_visa:hover {
+  color: #4bd156;
+  background-color: #fdfcea;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.continuer .box .form__group {
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 10px;
+  width: 85%;
+}
+
+.continuer .box .form__field {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid #9b9b9b;
+  outline: 0;
+  font-size: 1.3rem;
+  color: #fff;
+  padding: 7px 0;
+  background: transparent;
+  -webkit-transition: border-color 0.2s;
+  transition: border-color 0.2s;
+}
+
+.continuer .box .form__field::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.continuer .box .form__field:-ms-input-placeholder {
+  color: transparent;
+}
+
+.continuer .box .form__field::-ms-input-placeholder {
+  color: transparent;
+}
+
+.continuer .box .form__field::placeholder {
+  color: transparent;
+}
+
+.continuer .box .form__field:placeholder-shown ~ .form__label {
+  font-size: 1rem;
+  cursor: text;
+  top: 20px;
+}
+
+.continuer .box .form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: #9b9b9b;
+}
+
+.continuer .box .form__field:focus {
+  padding-bottom: 6px;
+  font-weight: 700;
+  border-width: 3px;
+  -o-border-image: linear-gradient(to right, #1181ad, #38ef7d);
+     border-image: -webkit-gradient(linear, left top, right top, from(#1181ad), to(#38ef7d));
+     border-image: linear-gradient(to right, #1181ad, #38ef7d);
+  border-image-slice: 1;
+}
+
+.continuer .box .form__field:focus ~ .form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  font-size: 0.9rem;
+  color: #1181ad;
+  font-weight: 700;
+}
+
+.continuer .box .form__field:required, .continuer .box .form__field:invalid {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.continuer .box .cartData {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 300px;
+}
+
+.continuer .box .cartData .form__group {
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 10px;
+  width: 43%;
+}
+
+.continuer .box .checkout {
+  width: 150px;
+  height: 55px;
+  border-radius: 0.3rem;
+  border: none;
+  background-color: #f8d01d;
+  font-size: 18px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.continuer .box .checkout:hover {
+  color: #ffffff;
+  background-color: #098b64;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+/*# sourceMappingURL=PaymentComp.module.css.map */

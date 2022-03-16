@@ -1,0 +1,99 @@
+@media screen and(max-width: 510px) {
+  .details {
+    flex-direction: column;
+    .titles {
+      font-size: 13px;
+      p {
+        display: none;
+      }
+    }
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 2rem 0 2rem;
+  height: 160px;
+
+  border-bottom: solid 2px rgb(197, 197, 197);
+  .details {
+    display: flex;
+    align-items: center;
+    .images {
+      display: flex;
+      height: 140px;
+      align-items: center;
+      justify-content: center;
+
+      .img_background {
+        width: 155px;
+        height: 100px;
+        z-index: 1;
+        position: relative;
+      }
+      .img_product {
+        width: 140px;
+        position: relative;
+        z-index: 2;
+        margin-left: -9.2rem;
+      }
+    }
+    .titles {
+      margin: 0 1rem 0rem 1rem;
+      p {
+        color: rgb(119, 119, 119);
+      }
+    }
+  }
+
+  .price {
+    color: rgb(61, 61, 61);
+    margin: 0 1rem 0rem 1rem;
+    font-size: 14px;
+  }
+  .buttons {
+    display: flex;
+    align-items: center;
+    font-family: "Comfortaa", cursive;
+    color: rgb(51, 51, 51);
+    .quantity {
+      font-family: "Work Sans", sans-serif;
+      font-size: 19px;
+    }
+    .quantityCounter {
+      padding: 0.2rem;
+      background-color: rgb(250, 250, 250);
+      height: 80px;
+      width: 45px;
+      margin: 0.2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size: 25px;
+      box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+        rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+        rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+      border-radius: 0.2rem;
+    }
+    .deleteProduct {
+      padding: 0.2rem;
+      background-color: rgb(250, 250, 250);
+      height: 80px;
+      width: 45px;
+      margin: 0.2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size: 40px;
+      box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+        rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+        rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+      border-radius: 0.2rem;
+      animation-name: example;
+    }
+  }
+}

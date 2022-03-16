@@ -1,0 +1,191 @@
+$primary: #1181ad;
+$secondary: #38ef7d;
+$white: #fff;
+$gray: #9b9b9b;
+.continuer {
+  background-color: rgb(31, 31, 31);
+  font-family: "Work Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+  justify-content: space-evenly;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  align-items: center;
+
+  .box {
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    .paymentTitle {
+      font-size: 25px;
+      color: rgb(243, 243, 243);
+    }
+    .paymentMethod {
+      display: flex;
+      flex-direction: column;
+      color: rgb(180, 180, 180);
+      justify-content: space-between;
+      height: 50px;
+      input[type="radio"]:after {
+        width: 15px;
+        height: 15px;
+        border-radius: 15px;
+        top: -2px;
+        left: -5px;
+        position: relative;
+        background-color: #d1d3d1;
+        content: "";
+        display: inline-block;
+        visibility: visible;
+        border: 2px solid white;
+      }
+
+      input[type="radio"]:checked:after {
+        width: 15px;
+        height: 15px;
+        border-radius: 15px;
+        top: -2px;
+        left: -5px;
+        position: relative;
+        background-color: #ffa500;
+        content: "";
+        display: inline-block;
+        visibility: visible;
+        border: 2px solid white;
+      }
+    }
+    .btn_paypal {
+      width: 150px;
+      height: 55px;
+      border-bottom-left-radius: 0.3rem;
+      border-top-left-radius: 0.3rem;
+      border: none;
+      background-color: rgb(48, 129, 196);
+      transition: all 0.5s;
+
+      .paypal {
+        font-size: 2rem;
+      }
+      &:hover {
+        color: rgb(48, 129, 196);
+        background-color: #fdfcea;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+          rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+          rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        transition: all 0.5s;
+      }
+    }
+    .btn_visa {
+      width: 150px;
+      height: 55px;
+      border-bottom-right-radius: 0.3rem;
+      border-top-right-radius: 0.3rem;
+      border: none;
+      background-color: rgb(75, 209, 86);
+      .visa {
+        font-size: 2rem;
+      }
+      &:hover {
+        color: rgb(75, 209, 86);
+        background-color: #fdfcea;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+          rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+          rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        transition: all 0.5s;
+      }
+    }
+
+    .form__group {
+      position: relative;
+      padding: 15px 0 0;
+      margin-top: 10px;
+      width: 85%;
+    }
+
+    .form__field {
+      font-family: inherit;
+      width: 100%;
+      border: 0;
+      border-bottom: 2px solid $gray;
+      outline: 0;
+      font-size: 1.3rem;
+      color: $white;
+      padding: 7px 0;
+      background: transparent;
+      transition: border-color 0.2s;
+
+      &::placeholder {
+        color: transparent;
+      }
+
+      &:placeholder-shown ~ .form__label {
+        font-size: 1rem;
+        cursor: text;
+        top: 20px;
+      }
+    }
+
+    .form__label {
+      position: absolute;
+      top: 0;
+      display: block;
+      transition: 0.2s;
+      font-size: 1rem;
+      color: $gray;
+    }
+
+    .form__field:focus {
+      ~ .form__label {
+        position: absolute;
+        top: 0;
+        display: block;
+        transition: 0.2s;
+        font-size: 0.9rem;
+        color: $primary;
+        font-weight: 700;
+      }
+      padding-bottom: 6px;
+      font-weight: 700;
+      border-width: 3px;
+      border-image: linear-gradient(to right, $primary, $secondary);
+      border-image-slice: 1;
+    }
+    /* reset input */
+    .form__field {
+      &:required,
+      &:invalid {
+        box-shadow: none;
+      }
+    }
+    .cartData {
+      display: flex;
+      width: 300px;
+      .form__group {
+        position: relative;
+        padding: 15px 0 0;
+        margin-top: 10px;
+        width: 43%;
+      }
+    }
+    .checkout {
+      width: 150px;
+      height: 55px;
+      border-radius: 0.3rem;
+      border: none;
+      background-color: #f8d01d;
+      font-size: 18px;
+      transition: all 0.5s;
+
+      &:hover {
+        color: #ffffff;
+        background-color: #098b64;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+          rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        transition: all 0.2s;
+      }
+    }
+  }
+}
