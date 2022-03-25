@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../SASS/PaymentComp.module.css";
+import styles from "../SASS/PaymentComp.module.scss";
 import { RiVisaLine, RiPaypalFill } from "react-icons/ri";
 
 const PaymentComp = () => {

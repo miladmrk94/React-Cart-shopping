@@ -1,11 +1,3 @@
-@import "@animxyz/core";
-
-// Add all the core/utilities selectors
-@include xyz-all;
-// --- Or for more control and granularity ---
-@include xyz-core;
-@include xyz-utilities;
-
 .container {
   font-family: "Work Sans", sans-serif;
   display: flex;
@@ -16,10 +8,27 @@
     display: flex;
     flex-direction: column;
     padding: 2rem;
-    h2 {
-      margin-top: 3rem;
-      color: rgb(59, 59, 59);
+    .headerBox {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      .cartTitle {
+        margin-top: 3rem;
+        color: rgb(59, 59, 59);
+        display: inline-block;
+        .cartTotal {
+          display: inline-block;
+          margin-left: 5px;
+          color: #f89e0f;
+        }
+      }
+      .orderBox {
+        height: 30px;
+        width: 120px;
+        border-radius: 0.3rem;
+      }
     }
+
     border-bottom: solid 2px rgb(197, 197, 197);
   }
   .footer {

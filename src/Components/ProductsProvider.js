@@ -1,5 +1,6 @@
-import React, { useState, useContext, useReducer } from "react";
+import React, { useContext, useReducer } from "react";
 import { ProductData } from "../db/ProductsData";
+import _ from "lodash";
 
 const ProductContext = React.createContext();
 const ProductContextDispatcher = React.createContext();
@@ -45,6 +46,14 @@ const reducer = (state, action) => {
       });
 
       return filterProduct;
+    }
+    case "sort": {
+      const value = action.event.value;
+      if (value === "high") {
+        return _.orderBy(state, ["price"], ["desc"]);
+      } else {
+        return _.orderBy(state, ["price"], ["asc"]);
+      }
     }
 
     default:

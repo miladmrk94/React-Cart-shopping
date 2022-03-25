@@ -1,8 +1,6 @@
-import React, { useState, useEffect } from "react";
-import styles from "../SASS/Products.module.css";
+import React from "react";
+import styles from "../SASS/Products.module.scss";
 import background from "../images/back01.png";
-import { useProduct } from "./ProductsProvider";
-import { useTransition, animated } from "react-spring";
 
 const Products = ({
   image,
@@ -36,12 +34,16 @@ const Products = ({
           <h2>$ {price}</h2>
         </div>
         <div className={styles.quantityCounter}>
-          <h4 onClick={addProduct}>+</h4>
+          <h4 className={styles.add} onClick={addProduct}>
+            +
+          </h4>
           <h4 className={styles.quantity}>{quantity}</h4>
-          <h4 onClick={minusProduct}>-</h4>
+          <h4 className={styles.minus} onClick={minusProduct}>
+            -
+          </h4>
         </div>
         <div onClick={deleteProduct} className={styles.deleteProduct}>
-          <h4>x</h4>
+          <h4 className={styles.deleted}>x</h4>
         </div>
       </div>
     </div>

@@ -1,4 +1,4 @@
-import "./App.css";
+import "./App.scss";
 import ProductsComp from "./Components/ProductsComp";
 import PaymentComp from "./Components/PaymentComp";
 import ProductsProvider from "./Components/ProductsProvider";

@@ -1,8 +1,6 @@
-
-
 .App {
   display: flex;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
 
   background-color: #f3f1ed;
   height: 100%;
@@ -11,11 +9,11 @@
 }
 
 .ItemOne {
- /* flex:2 1 auto; */
- flex-grow:21;
+  /* flex:2 1 auto; */
+  flex-grow: 21;
 }
 .ItemTwo {
-  order:0;
-  flex-grow:1;
-  flex-shrink:1;
+  order: 0;
+  flex-grow: 1;
+  flex-shrink: 1;
 }
