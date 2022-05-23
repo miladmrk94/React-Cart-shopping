@@ -1,4 +1,4 @@
-# React Shop
+# React-Cart-shopping
 
 [miladmrk94.github.io/React-Cart-shopping](https://miladmrk94.github.io/React-Cart-shopping/)
 
