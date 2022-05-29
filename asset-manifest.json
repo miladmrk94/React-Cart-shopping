@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/React-Cart-shopping/static/css/main.0f6017e0.css",
-    "main.js": "/React-Cart-shopping/static/js/main.21a9d5e1.js",
+    "main.css": "/React-Cart-shopping/static/css/main.24bcfb42.css",
+    "main.js": "/React-Cart-shopping/static/js/main.9d8be0d9.js",
     "static/media/pic(6).png": "/React-Cart-shopping/static/media/pic(6).66e868b30061ea66bb4c.png",
     "static/media/priscilla.png": "/React-Cart-shopping/static/media/priscilla.5d72e4817e2b83ca6ec8.png",
     "static/media/pic(4).png": "/React-Cart-shopping/static/media/pic(4).99d9fd27f95184d82041.png",
@@ -9,13 +9,14 @@
     "static/media/pic(2).png": "/React-Cart-shopping/static/media/pic(2).1b5cd2dc24bb29904217.png",
     "static/media/pic(3).png": "/React-Cart-shopping/static/media/pic(3).bcfe3e13f8b0e29b6c99.png",
     "static/media/pic(1).png": "/React-Cart-shopping/static/media/pic(1).886d65ef63a1875b7371.png",
+    "static/media/SansLight.woff": "/React-Cart-shopping/static/media/SansLight.a7dd6af7cc7aa2373e7e.woff",
     "static/media/back01.png": "/React-Cart-shopping/static/media/back01.71a90e159284e6df6240.png",
     "index.html": "/React-Cart-shopping/index.html",
-    "main.0f6017e0.css.map": "/React-Cart-shopping/static/css/main.0f6017e0.css.map",
-    "main.21a9d5e1.js.map": "/React-Cart-shopping/static/js/main.21a9d5e1.js.map"
+    "main.24bcfb42.css.map": "/React-Cart-shopping/static/css/main.24bcfb42.css.map",
+    "main.9d8be0d9.js.map": "/React-Cart-shopping/static/js/main.9d8be0d9.js.map"
   },
   "entrypoints": [
-    "static/css/main.0f6017e0.css",
-    "static/js/main.21a9d5e1.js"
+    "static/css/main.24bcfb42.css",
+    "static/js/main.9d8be0d9.js"
   ]
 }
