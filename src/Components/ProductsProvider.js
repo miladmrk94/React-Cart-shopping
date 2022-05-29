@@ -5,6 +5,7 @@ import _ from "lodash";
 const ProductContext = React.createContext();
 const ProductContextDispatcher = React.createContext();
 const initialProducts = ProductData;
+
 const reducer = (state, action) => {
   switch (action.type) {
     case "add": {
