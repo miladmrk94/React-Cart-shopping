@@ -40,14 +40,20 @@ const Products = ({
       </div>
 
       <div className={styles.buttons}>
-        <div className={styles.price}>
+        <div className={i18n.language === "fa" ? styles.priceFa : styles.price}>
           <h2>$ {price}</h2>
         </div>
         <div className={styles.quantityCounter}>
           <h4 className={styles.add} onClick={addProduct}>
             +
           </h4>
-          <h4 className={styles.quantity}>{quantity}</h4>
+          <h4
+            className={
+              i18n.language === "fa" ? styles.quantityFa : styles.quantity
+            }
+          >
+            {quantity}
+          </h4>
           <h4 className={styles.minus} onClick={minusProduct}>
             -
           </h4>

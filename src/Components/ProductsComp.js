@@ -48,11 +48,14 @@ const ProductsComp = () => {
           <select onChange={selectHandler} value={lang}>
             <option value="en">En</option>
             <option value="fa">Fa</option>
-            <option value="de">De</option>
           </select>
         </div>
         <div className={styles.headerBox}>
-          <h2 className={styles.cartTitle}>
+          <h2
+            className={
+              i18n.language === "fa" ? styles.cartTitleFa : styles.cartTitle
+            }
+          >
             {t("SHOPPING CART")}:
             <p className={styles.cartTotal}>{product.length}</p>
           </h2>
@@ -64,7 +67,7 @@ const ProductsComp = () => {
           />
         </div>
       </header>
-      <section>
+      <section style={{ height: "550px", overflowY: "scroll" }}>
         {product.length <= 0 ? (
           <div
             style={{
@@ -98,7 +101,7 @@ const ProductsComp = () => {
       </section>
       <footer className={styles.footer}>
         <h4>{t("SUBTOTAL")}</h4>
-        <h4>
+        <h4 className={i18n.language === "fa" && styles.NumberFa}>
           $
           {product.reduce((total, item) => {
             return total + item.price * item.quantity;
@@ -106,7 +109,13 @@ const ProductsComp = () => {
         </h4>
       </footer>
       <div>
-        <img className={styles.greenImg} src={greenImg} alt="greenImg" />
+        <img
+          className={
+            i18n.language === "fa" ? styles.greenImgFa : styles.greenImg
+          }
+          src={greenImg}
+          alt="greenImg"
+        />
       </div>
     </div>
   );

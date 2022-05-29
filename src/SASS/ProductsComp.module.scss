@@ -22,13 +22,25 @@
         margin-top: 3rem;
         color: rgb(59, 59, 59);
         display: inline-block;
-        font-family: "SansLight";
         .cartTotal {
           display: inline-block;
-          margin-left: 5px;
+          margin-inline: 5px;
           color: #f89e0f;
         }
       }
+
+      .cartTitleFa {
+        margin-top: 3rem;
+        color: rgb(59, 59, 59);
+        display: inline-block;
+        font-family: "SansLight";
+        .cartTotal {
+          display: inline-block;
+          margin-inline: 5px;
+          color: #f89e0f;
+        }
+      }
+
       .orderBox {
         height: 30px;
         width: 120px;
@@ -43,9 +55,17 @@
     padding: 2rem;
     justify-content: space-between;
     font-size: 23px;
+    .NumberFa{
+      font-family: "SansLight";
+
+    }
   }
   .greenImg {
     width: 380px;
+  }
+  .greenImgFa{
+    width: 380px;
+    transform: rotate(180deg);
   }
 }
 .header__logo {
