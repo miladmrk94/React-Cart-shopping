@@ -5,7 +5,7 @@ import { RiVisaLine, RiPaypalFill } from "react-icons/ri";
 const PaymentComp = () => {
   return (
     <div className={styles.continuer}>
-      <div className={styles.box}>
+      <div className={styles.box} dir="ltr">
         <div className={styles.paymentTitle}>
           <h3>PAYMENT</h3>
         </div>

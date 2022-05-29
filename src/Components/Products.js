@@ -1,6 +1,8 @@
 import React from "react";
 import styles from "../SASS/Products.module.scss";
 import background from "../images/back01.png";
+import i18n from "../i18n/i18n";
+import { useTranslation } from "react-i18next";
 
 const Products = ({
   image,
@@ -12,6 +14,8 @@ const Products = ({
   minusProduct,
   deleteProduct,
 }) => {
+  const { t } = useTranslation();
+  console.log(i18n.dir());
   return (
     <div className={styles.container}>
       <div className={styles.details}>
@@ -21,7 +25,13 @@ const Products = ({
             src={background}
             alt="backgroundProduct"
           />
-          <img className={styles.img_product} src={image} alt="product" />
+          <img
+            className={
+              i18n.dir() === "rtl" ? styles.img_product_rtl : styles.img_product
+            }
+            src={image}
+            alt="product"
+          />
         </div>
         <div className={styles.titles}>
           <h4>{name}</h4>

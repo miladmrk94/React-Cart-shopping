@@ -8,6 +8,12 @@
     display: flex;
     flex-direction: column;
     padding: 2rem;
+    .headerBar{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
     .headerBox {
       display: flex;
       justify-content: space-between;
@@ -16,6 +22,7 @@
         margin-top: 3rem;
         color: rgb(59, 59, 59);
         display: inline-block;
+        font-family: "SansLight";
         .cartTotal {
           display: inline-block;
           margin-left: 5px;
